@@ -12,8 +12,7 @@ class ListsController < ApplicationController
      # 4. トップ画面へリダイレクト
       redirect_to list_path(@list.id)
     else
-      render :index
-      render :index, status: :unprocessable_entity
+      render :new
     end
   end
 
